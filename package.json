@@ -1,0 +1,30 @@
+{
+    "name": "receipt-autofill",
+    "version": "1.0.0",
+    "description": "Custom Directus interface to get a receipt template and fill a rich text field.",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "bundle": "nodemon -e ts,js,env,vue,json --ignore ./index.js --exec npx rollup -c"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^20.0.0",
+        "@rollup/plugin-node-resolve": "^13.0.4",
+        "@vue/compiler-sfc": "^3.2.4",
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.12",
+        "postcss": "^8.3.6",
+        "rollup": "^2.56.2",
+        "rollup-plugin-postcss": "^4.0.1",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-typescript": "^1.0.1",
+        "rollup-plugin-vue": "6.0.0",
+        "sass": "^1.38.0",
+        "tslib": "^2.3.1",
+        "typescript": "^4.3.5",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "dependencies": {
+        "vue": "^3.2.4"
+    }
+}
