@@ -62,7 +62,7 @@ var script = {
         var _this = this;
         var emit = _a.emit;
         var values = inject("values");
-        var system = inject("system");
+        var api = inject("api");
         var model = ref(null);
         var error = ref(false);
         watch(values, function (currentValues) { return __awaiter(_this, void 0, void 0, function () {
@@ -78,7 +78,7 @@ var script = {
                         _a.trys.push([1, 5, , 6]);
                         if (!checkIsNumber(currentValues.modelo)) return [3, 3];
                         modelId = currentValues.modelo;
-                        return [4, system.api.get("items/modelo_receita/" + modelId)];
+                        return [4, api.get("items/modelo_receita/" + modelId)];
                     case 2:
                         conteudo = (_a.sent()).data.data.conteudo;
                         handleInput(conteudo);

@@ -18,7 +18,7 @@ export default {
     },
     setup(props, { emit }) {
         const values = inject("values") as Record<string, any>
-        const system = inject("system") as Record<string, any>
+        const api = inject("api") as Record<string, any>
 
         const model = ref(null)
         const error = ref(false)
@@ -36,7 +36,7 @@ export default {
                                 // getting model data from existing id
                                 const modelId = currentValues.modelo
                                 const { conteudo } = (
-                                    await system.api.get(
+                                    await api.get(
                                         `items/modelo_receita/${modelId}`
                                     )
                                 ).data.data
